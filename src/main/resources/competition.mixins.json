@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "net.nikolas2k2020.competition.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ExampleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
