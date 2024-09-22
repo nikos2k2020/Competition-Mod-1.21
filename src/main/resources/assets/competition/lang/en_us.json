@@ -1,0 +1,37 @@
+{
+  "itemgroup.competition.mod_blocks_group": "Mod Blocks",
+  "itemgroup.competition.mod_items_group": "Mod Items",
+
+  "item.competition.ruby": "Ruby",
+  "item.competition.marshmallow": "Marshmallow",
+  "item.competition.marshmallow_stick": "Marshmallow on a Stick",
+  "item.competition.marshmallow_stick_burnt": "Burned Marshmallow on a Stick",
+  "item.competition.marshmallow_stick_cooked": "Cooked Marshmallow on a Stick",
+  "item.competition.marshmallow_stick_perfect": "Perfectly Cooked Marshmallow on a Stick",
+  "item.competition.marshmallow_stick_slightly_cooked": "Slightly Cooked Marshmallow on a Stick",
+  "item.competition.burger": "Burger",
+  "item.competition.cabbage_leaf": "Cabbage Leaf",
+  "item.competition.beef_patty": "Beef Patty",
+  "item.competition.tomato": "Tomato",
+  "item.competition.onion": "Onion",
+
+  "block.competition.azalea_log": "Azalea Log",
+  "block.competition.stripped_azalea_log": "Stripped Azalea Log",
+  "block.competition.azalea_wood": "Azalea Wood",
+  "block.competition.stripped_azalea_wood": "Stripped Azalea Wood",
+
+  "block.competition.azalea_planks": "Azalea Planks",
+  "block.competition.azalea_stairs": "Azalea Stairs",
+  "block.competition.azalea_slab": "Azalea Slab",
+  "block.competition.azalea_button": "Azalea Button",
+  "block.competition.azalea_pressure_plate": "Azalea Pressure Plate",
+
+  "block.competition.azalea_fence": "Azalea Fence",
+  "block.competition.azalea_fence_gate": "Azalea Fence Gate",
+
+  "block.competition.azalea_door": "Azalea Door",
+  "block.competition.azalea_trapdoor": "Azalea Trapdoor",
+
+  "block.competition.ruby_block": "Ruby Block",
+  "block.competition.ruby_ore": "Ruby Ore"
+}
