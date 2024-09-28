@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "competition",
-	"version": "1.21-0.1",
+	"version": "1.21.1-0.1",
 	"name": "Competition Mod",
 	"description": "This is a mod I made for a competition between me and my friends",
 	"authors": [
@@ -29,8 +29,8 @@
 		"competition.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.16.4",
-		"minecraft": "~1.21",
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
 		"java": ">=21",
 		"fabric-api": "*"
 	},

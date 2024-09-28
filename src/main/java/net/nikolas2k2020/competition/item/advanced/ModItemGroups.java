@@ -29,15 +29,38 @@ public class ModItemGroups {
                         entries.add(ModBlocks.AZALEA_TRAPDOOR);
                         entries.add(ModBlocks.AZALEA_PRESSURE_PLATE);
                         entries.add(ModBlocks.AZALEA_BUTTON);
+                        entries.add(ModItems.AZALEA_SIGN);
+                        entries.add(ModItems.HANGING_AZALEA_SIGN);
+                        entries.add(ModBlocks.CHESTNUT_LOG);
+                        entries.add(ModBlocks.STRIPPED_CHESTNUT_LOG);
+                        entries.add(ModBlocks.CHESTNUT_WOOD);
+                        entries.add(ModBlocks.STRIPPED_CHESTNUT_WOOD);
+                        entries.add(ModBlocks.CHESTNUT_PLANKS);
+                        entries.add(ModBlocks.CHESTNUT_STAIRS);
+                        entries.add(ModBlocks.CHESTNUT_SLAB);
+                        entries.add(ModBlocks.CHESTNUT_FENCE);
+                        entries.add(ModBlocks.CHESTNUT_FENCE_GATE);
+                        entries.add(ModBlocks.CHESTNUT_DOOR);
+                        entries.add(ModBlocks.CHESTNUT_TRAPDOOR);
+                        entries.add(ModBlocks.CHESTNUT_PRESSURE_PLATE);
+                        entries.add(ModBlocks.CHESTNUT_BUTTON);
+                        entries.add(ModItems.CHESTNUT_SIGN);
+                        entries.add(ModItems.HANGING_CHESTNUT_SIGN);
+                        entries.add(ModBlocks.CHESTNUT_LEAVES);
                     }).build());
 
     public static final ItemGroup MOD_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(CompetitionMod.MOD_ID, "mod_items_group"), FabricItemGroup.builder()
-                    .icon(() -> new ItemStack(ModItems.Burger)).displayName(Text.translatable("itemgroup.competition.mod_items_group"))
+                    .icon(() -> new ItemStack(ModItems.KNIFE)).displayName(Text.translatable("itemgroup.competition.mod_items_group"))
                     .entries((displayContext, entries) -> {
+                        entries.add(ModItems.KNIFE);
                         entries.add(ModItems.Burger);
+                        entries.add(ModItems.MINCED_BEEF);
                         entries.add(ModItems.BEEF_PATTY);
+                        entries.add(ModItems.CABBAGE_SEEDS);
+                        entries.add(ModItems.CABBAGE);
                         entries.add(ModItems.CABBAGE_LEAF);
+                        entries.add(ModItems.TOMATO_SEEDS);
                         entries.add(ModItems.TOMATO);
                         entries.add(ModItems.ONION);
                     }).build());

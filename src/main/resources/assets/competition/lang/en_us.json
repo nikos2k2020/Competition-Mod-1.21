@@ -11,9 +11,15 @@
   "item.competition.marshmallow_stick_slightly_cooked": "Slightly Cooked Marshmallow on a Stick",
   "item.competition.burger": "Burger",
   "item.competition.cabbage_leaf": "Cabbage Leaf",
+  "item.competition.minced_beef": "Minced Beef",
   "item.competition.beef_patty": "Beef Patty",
   "item.competition.tomato": "Tomato",
+  "item.competition.tomato_seeds": "Tomato Seeds",
   "item.competition.onion": "Onion",
+  "item.competition.cabbage": "Cabbage",
+  "item.competition.cabbage_seeds": "Cabbage Seeds",
+
+  "item.competition.knife": "Knife",
 
   "block.competition.azalea_log": "Azalea Log",
   "block.competition.stripped_azalea_log": "Stripped Azalea Log",
@@ -31,6 +37,29 @@
 
   "block.competition.azalea_door": "Azalea Door",
   "block.competition.azalea_trapdoor": "Azalea Trapdoor",
+
+  "block.competition.standing_azalea_sign": "Azalea Sign",
+  "block.competition.azalea_hanging_sign": "Azalea Hanging Sign",
+
+  "block.competition.chestnut_log": "Chestnut Log",
+  "block.competition.stripped_chestnut_log": "Stripped Chestnut Log",
+  "block.competition.chestnut_wood": "Chestnut Wood",
+  "block.competition.stripped_chestnut_wood": "Stripped Chestnut Wood",
+
+  "block.competition.chestnut_planks": "Chestnut Planks",
+  "block.competition.chestnut_stairs": "Chestnut Stairs",
+  "block.competition.chestnut_slab": "Chestnut Slab",
+  "block.competition.chestnut_fence": "Chestnut Fence",
+  "block.competition.chestnut_fence_gate": "Chestnut Fence Gate",
+  "block.competition.chestnut_pressure_plate": "Chestnut Pressure Plate",
+  "block.competition.chestnut_button": "Chestnut Button",
+  "block.competition.chestnut_leaves": "Chestnut Leaves",
+
+  "block.competition.chestnut_door": "Chestnut Door",
+  "block.competition.chestnut_trapdoor": "Chestnut Trapdoor",
+
+  "block.competition.standing_chestnut_sign": "Chestnut Sign",
+  "block.competition.chestnut_hanging_sign": "Hanging Chestnut Sign",
 
   "block.competition.ruby_block": "Ruby Block",
   "block.competition.ruby_ore": "Ruby Ore"

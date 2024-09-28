@@ -5,19 +5,18 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
-import net.minecraft.item.Item;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
-import net.minecraft.recipe.Ingredient;
-import net.minecraft.recipe.ShapelessRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.nikolas2k2020.competition.block.ModBlocks;
 import net.nikolas2k2020.competition.item.ModItems;
 
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
-
+    public static final List<ItemConvertible> SMELTABLE = List.of(ModItems.MINCED_BEEF);
 
     public ModRecipeProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
@@ -26,7 +25,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     @Override
     public void generate(RecipeExporter exporter) {
         //Blocks
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RUBY, RecipeCategory.DECORATIONS, ModBlocks.RUBY_BLOCK);
+        //offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RUBY, RecipeCategory.DECORATIONS, ModBlocks.RUBY_BLOCK);
 
         offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.AZALEA_SLAB, ModBlocks.AZALEA_PLANKS);
         offerPressurePlateRecipe(exporter, ModBlocks.AZALEA_PRESSURE_PLATE, ModBlocks.AZALEA_PLANKS);
@@ -104,5 +103,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(FabricRecipeProvider.hasItem(ModItems.ONION),
                         FabricRecipeProvider.conditionsFromItem(ModItems.ONION))
                 .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.BEEF_PATTY).input(Items.COOKED_BEEF).criterion(FabricRecipeProvider.hasItem(Items.COOKED_BEEF),
+                FabricRecipeProvider.conditionsFromItem(Items.COOKED_BEEF)).criterion(FabricRecipeProvider.hasItem(Items.COOKED_BEEF),
+                FabricRecipeProvider.conditionsFromItem(Items.COOKED_BEEF)).offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CABBAGE_LEAF, 9).input(ModItems.CABBAGE).criterion(FabricRecipeProvider.hasItem(ModItems.CABBAGE),
+                FabricRecipeProvider.conditionsFromItem(ModItems.CABBAGE)).criterion(FabricRecipeProvider.hasItem(ModItems.CABBAGE),
+                FabricRecipeProvider.conditionsFromItem(ModItems.CABBAGE)).offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.MINCED_BEEF, 9).input(Items.BEEF).criterion(FabricRecipeProvider.hasItem(Items.BEEF),
+                FabricRecipeProvider.conditionsFromItem(Items.BEEF)).criterion(FabricRecipeProvider.hasItem(Items.BEEF),
+                FabricRecipeProvider.conditionsFromItem(Items.BEEF)).offerTo(exporter);
     }
 }

@@ -1,4 +1,4 @@
-package net.nikolas2k2020.competition.item;
+package net.nikolas2k2020.competition.item.advanced;
 
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.item.Items;
@@ -19,7 +19,9 @@ public class ModFoodComponents {
             .usingConvertsTo(Items.STICK).build();
 
     public static final FoodComponent BURGER = new FoodComponent.Builder().nutrition(11).saturationModifier(0.8f).build();
+    public static final FoodComponent CABBAGE = new FoodComponent.Builder().nutrition(2).saturationModifier(0.4f).build();
     public static final FoodComponent CABBAGE_LEAF = new FoodComponent.Builder().nutrition(1).saturationModifier(0.4f).build();
+    public static final FoodComponent MINCED_BEEF = new FoodComponent.Builder().nutrition(2).saturationModifier(0.3f).build();
     public static final FoodComponent BEEF_PATTY = new FoodComponent.Builder().nutrition(4).saturationModifier(0.8f).build();
     public static final FoodComponent TOMATO = new FoodComponent.Builder().nutrition(1).saturationModifier(0.3f).build();
     public static final FoodComponent ONION = new FoodComponent.Builder().nutrition(2).saturationModifier(0.4f).build();
